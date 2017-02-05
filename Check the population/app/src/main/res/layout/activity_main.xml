@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jovan.checkthepopulation.MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:srcCompat="@drawable/populationn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a country name or select it from the list"
+        android:id="@+id/textView"
+        android:layout_marginTop="26dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:text="Enter a year between 1950 and the current year..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="25sp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:text="Enter a age between 0 and 100..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="25sp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTextView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_purple"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/editText3"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check the population"
+        android:id="@+id/button"
+        android:onClick="checkPopulation"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:id="@+id/button2"
+        android:onClick="countriesList"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/editText"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>
